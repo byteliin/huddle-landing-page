@@ -1,0 +1,41 @@
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --black: #000;
+  --white: #fff;
+}
+
+:focus-visible {
+  outline: 4px dashed black;
+}
+
+:focus:not(:focus-visible) {
+  outline: none;
+  -webkit-box-shadow: 1px 1px 5px rgba(1, 1, 0, 0.7);
+          box-shadow: 1px 1px 5px rgba(1, 1, 0, 0.7);
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: var(--primary-text-clr);
+  text-decoration: none;
+}
+
+.dark {
+  --primary-text-clr: var(--black);
+  --secondary-text-clr: var(--white);
+}
+/*# sourceMappingURL=index.css.map */
